@@ -1,6 +1,12 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { importProvidersFrom } from '@angular/core';
+import { ShoppingItemComponent } from './app/shopping-list/shopping-item.component';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(ShoppingItemComponent, {
+  providers: [
+    provideAnimations(),
+    importProvidersFrom(FormsModule)
+  ]
+}).catch((err) => console.error(err));
