@@ -1,6 +1,6 @@
 # Shopping Cart
 
-This is a simple shopping cart application built with Angular. It allows users to add, remove, and view products in the cart, as well as calculate the total price.
+This is a simple shopping cart application built with Angular. It allows users to add, remove, and view products in the cart.
 
 ## Features
 
